@@ -19,13 +19,16 @@ public class FizzBuzzSolutionTest {
     }
 
     /*
-    * Pass Test
+    * Fizz Pass Test
     * */
     @Test
     public void fizz_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(6),equalTo("fizz"));
     }
 
+    /*
+     * Buzz Pass Test
+     * */
     @Test
     public void buzz_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(10),equalTo("buzz"));
