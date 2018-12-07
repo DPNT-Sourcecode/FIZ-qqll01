@@ -24,6 +24,7 @@ public class FizzBuzzSolutionTest {
     @Test
     public void fizz_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(6),equalTo("fizz"));
+        assertThat(fizzBuzzSolution.fizzBuzz(13),equalTo("fizz"));
     }
 
     /*
@@ -32,12 +33,14 @@ public class FizzBuzzSolutionTest {
     @Test
     public void buzz_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(10),equalTo("buzz"));
+        assertThat(fizzBuzzSolution.fizzBuzz(151),equalTo("buzz"));
     }
 
 
     @Test
     public void fizzbuzz_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(15),equalTo("fizz buzz"));
+        assertThat(fizzBuzzSolution.fizzBuzz(53),equalTo("fizz buzz"));
     }
 
     @Test
@@ -47,3 +50,4 @@ public class FizzBuzzSolutionTest {
 
 
 }
+
