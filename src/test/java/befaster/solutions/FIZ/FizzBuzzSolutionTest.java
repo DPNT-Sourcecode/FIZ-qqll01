@@ -39,7 +39,6 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void fizzbuzz_success_test() {
-        assertThat(fizzBuzzSolution.fizzBuzz(15),equalTo("fizz buzz"));
         assertThat(fizzBuzzSolution.fizzBuzz(53),equalTo("fizz buzz"));
     }
 
@@ -75,5 +74,6 @@ public class FizzBuzzSolutionTest {
      */
 
 }
+
 
 

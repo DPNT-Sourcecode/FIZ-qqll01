@@ -32,9 +32,11 @@ public class FizzBuzzSolution {
 
 
     public String deluxe(Integer number){
+//        return (number>10&&number.toString().matches("(.)\\1*"))?(number%2==1?"fake ":"")+"deluxe":"";
         return (number>10&&number.toString().matches("(.)\\1*"))?(number%2==1?"fake ":"")+"deluxe":"";
     }
 
 
 }
+
 
