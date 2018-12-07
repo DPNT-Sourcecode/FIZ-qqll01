@@ -30,7 +30,15 @@ public class FizzBuzzSolution {
         return (number%3==0||number.toString().contains("3"))?"fizz":"";
     }
 
+    public String buzz(Integer number){
+        return (number%5==0||number.toString().contains("5"))?"buzz":"";
+    }
+
+    public String deluxe(Integer number){
+        return (number>10&&number.toString().matches("(.)\\1*"))?"deluxe":"";
+    }
 
 
 }
+
 
