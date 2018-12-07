@@ -51,11 +51,17 @@ public class FizzBuzzSolutionTest {
     @Test
     public void deluxe_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(22),equalTo("deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(30),equalTo("deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(50),equalTo("deluxe"));
+
+
     }
 
     @Test
     public void fake_deluxe_success_test() {
         assertThat(fizzBuzzSolution.fizzBuzz(11),equalTo("fake deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(33),equalTo("fake deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(55),equalTo("fake deluxe"));
     }
 
 
@@ -71,3 +77,4 @@ public class FizzBuzzSolutionTest {
      */
 
 }
+
