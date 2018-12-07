@@ -1,15 +1,46 @@
 package befaster.solutions.FIZ;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 import static org.junit.Assert.*;
 
 public class FizzBuzzSolutionTest {
 
+    FizzBuzzSolution fizzBuzzSolution;
+
+    @Before
+    public void setup(){
+        fizzBuzzSolution = new FizzBuzzSolution();
+    }
+
+    /*
+    * Pass Test
+    * */
+    @Test
+    public void fizz_success_test() {
+        assertThat(fizzBuzzSolution.fizzBuzz(6),equalTo("fizz"));
+    }
 
     @Test
-    public void fizzBuzz() {
-        Assert.fail("Not implemented");
+    public void buzz_success_test() {
+        assertThat(fizzBuzzSolution.fizzBuzz(10),equalTo("buzz"));
     }
+
+
+    @Test
+    public void fizzbuzz_success_test() {
+        assertThat(fizzBuzzSolution.fizzBuzz(15),equalTo("fizz buzz"));
+    }
+
+    @Test
+    public void non_fizzbuzz_success_test() {
+        assertThat(fizzBuzzSolution.fizzBuzz(1),equalTo("1"));
+    }
+
+
 }
