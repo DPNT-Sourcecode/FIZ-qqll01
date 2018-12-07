@@ -29,6 +29,8 @@ public class FizzBuzzSolution {
         return (number%5==0||number.toString().contains("5"))?"buzz ":"";
     }
 
+
+
     public String deluxe(Integer number){
         return (number>10&&number.toString().matches("(.)\\1*"))?(number%2==1?"fake ":"")+"deluxe":"";
     }

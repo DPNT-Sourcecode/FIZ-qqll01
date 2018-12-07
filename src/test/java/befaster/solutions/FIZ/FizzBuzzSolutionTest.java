@@ -59,10 +59,15 @@ public class FizzBuzzSolutionTest {
     }
 
 
-    /*
-    *
-    *  - {"method":"fizz_buzz","params":[33],"id":"FIZ_R3_037"}, expected: "fizz deluxe", got: "fizz  deluxe"
- - {"method":"fizz_buzz","params":[222],"id":"FIZ_R3_038"}, expected: "fizz deluxe", got: "fizz  deluxe"
- - {"method":"fizz_buzz","params":[777],"id":"FIZ_R3_039"}, expected: "fizz deluxe", got: "fizz  deluxe"
-    * */
+    /**
+     * It is time to completely change the "deluxe" concept such that:
+     *   - The old rules for "deluxe" do not apply.
+     *   - A number is "deluxe" if it fulfils at least one of the following:
+     *        - is divisible by 3 AND contains a 3
+     *        - is divisible by 5 AND contains a 5
+     *   - We should still say "fake deluxe" if the "deluxe" number is odd
+     *   - A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
+     *   - All the previous rules for "fizz" and "buzz" are still valid
+     */
+
 }
