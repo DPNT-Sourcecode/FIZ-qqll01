@@ -23,9 +23,14 @@ public class FizzBuzzSolution {
             result.append(number);
         }
 
-
-
         return result.toString().trim();
     }
 
+    public String fizz(Integer number){
+        return (number%3==0||number.toString().contains("3"))?"fizz":"";
+    }
+
+
+
 }
+
