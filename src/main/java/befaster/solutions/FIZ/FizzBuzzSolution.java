@@ -13,15 +13,16 @@ public class FizzBuzzSolution {
     {
 
         StringBuilder result = new StringBuilder();
-        if(number%3==0||number.toString().contains("3")){
-            result.append("fizz ");
-        }
-        if(number%5==0||number.toString().contains("5")){
-            result.append("buzz");
-        }
-        if(result.length()==0){
-            result.append(number);
-        }
+
+
+        result.append(fizz(number));
+        result.append(result.length()>0?" ":"");
+
+        result.append(buzz(number));
+        result.append(result.length()>0?" ":"");
+
+        result.append(deluxe(number));
+        result.append(result.length()==0?number:"");
 
         return result.toString().trim();
     }
@@ -40,5 +41,6 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
