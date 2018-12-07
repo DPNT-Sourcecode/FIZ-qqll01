@@ -11,7 +11,7 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number)
     {
-//        String result = (number%3)?:
+
         StringBuilder result = new StringBuilder();
         if(number%3==0||number.toString().contains("3")){
             result.append("fizz ");
