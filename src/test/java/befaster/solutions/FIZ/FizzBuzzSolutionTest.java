@@ -48,5 +48,9 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzzSolution.fizzBuzz(1),equalTo("1"));
     }
 
+    @Test
+    public void fizzbuzzDelux_success_test() {
+        assertThat(fizzBuzzSolution.fizzBuzz(11),equalTo("fizz buzz"));
+    }
 
 }

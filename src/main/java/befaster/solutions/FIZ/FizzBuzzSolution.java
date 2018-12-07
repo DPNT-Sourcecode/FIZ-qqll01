@@ -23,6 +23,8 @@ public class FizzBuzzSolution {
             result.append(number);
         }
 
+
+
         return result.toString().trim();
     }
 
