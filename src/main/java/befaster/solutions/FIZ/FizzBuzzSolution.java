@@ -32,8 +32,9 @@ public class FizzBuzzSolution {
 
 
     public String deluxe(Integer number){
-        return (fizz(number).length()>0||buzz(number).length()>0)?(number%2==1?"fake ":"")+"deluxe":"";
+        return (number%3==0&&number.toString().contains("3"))||(number%5==0&&number.toString().contains("5"))?(number%2==1?"fake ":"")+"deluxe":"";
     }
 
 
 }
+

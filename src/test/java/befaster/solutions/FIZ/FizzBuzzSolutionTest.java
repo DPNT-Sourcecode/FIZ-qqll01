@@ -49,7 +49,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void deluxe_success_test() {
-        assertThat(fizzBuzzSolution.fizzBuzz(30),equalTo("fizz deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(30),equalTo("fizz buzz deluxe"));
         assertThat(fizzBuzzSolution.fizzBuzz(50),equalTo("buzz deluxe"));
 
 
