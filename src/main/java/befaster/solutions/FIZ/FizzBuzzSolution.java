@@ -13,10 +13,10 @@ public class FizzBuzzSolution {
     {
 //        String result = (number%3)?:
         StringBuilder result = new StringBuilder();
-        if(number%3==0){
+        if(number%3==0||number.toString().contains("3")){
             result.append("fizz ");
         }
-        if(number%5==0){
+        if(number%5==0||number.toString().contains("5")){
             result.append("buzz");
         }
         if(result.length()==0){
@@ -27,4 +27,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
