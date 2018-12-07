@@ -53,4 +53,11 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzzSolution.fizzBuzz(11),equalTo("deluxe"));
     }
 
+
+    /*
+    *
+    *  - {"method":"fizz_buzz","params":[33],"id":"FIZ_R3_037"}, expected: "fizz deluxe", got: "fizz  deluxe"
+ - {"method":"fizz_buzz","params":[222],"id":"FIZ_R3_038"}, expected: "fizz deluxe", got: "fizz  deluxe"
+ - {"method":"fizz_buzz","params":[777],"id":"FIZ_R3_039"}, expected: "fizz deluxe", got: "fizz  deluxe"
+    * */
 }

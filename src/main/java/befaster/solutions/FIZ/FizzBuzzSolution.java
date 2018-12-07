@@ -12,23 +12,21 @@ public class FizzBuzzSolution {
 
 
         result.append(fizz(number));
-        result.append(result.length()>0?" ":"");
 
         result.append(buzz(number));
-        result.append(result.length()>0?" ":"");
 
         result.append(deluxe(number));
         result.append(result.length()==0?number:"");
 
-        return result.toString().trim();
+        return result.toString().replaceAll("  "," ").trim();
     }
 
     public String fizz(Integer number){
-        return (number%3==0||number.toString().contains("3"))?"fizz":"";
+        return (number%3==0||number.toString().contains("3"))?"fizz ":"";
     }
 
     public String buzz(Integer number){
-        return (number%5==0||number.toString().contains("5"))?"buzz":"";
+        return (number%5==0||number.toString().contains("5"))?"buzz ":"";
     }
 
     public String deluxe(Integer number){
