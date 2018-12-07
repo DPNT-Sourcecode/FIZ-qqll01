@@ -8,7 +8,6 @@ public class HelloSolution {
     * Return String
     * */
     public String hello(String friendName) {
-
-        return "Hello, World!";
+        return "Hello, "+friendName+"!";
     }
 }
